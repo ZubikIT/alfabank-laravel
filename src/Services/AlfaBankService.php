@@ -30,7 +30,7 @@ class AlfaBankService
     /**
      * Регистрация ссылки на банк [Создание платежа]
      */
-    public function createPayment($orderId, $amount, $expirationDate, $jsonParams)
+    public function createPayment($orderId, $amount, $email, $expirationDate, $jsonParams)
     {
         $response = $this->client->post('/payment/rest/register.do', [
             'form_params' => [
