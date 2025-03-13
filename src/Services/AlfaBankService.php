@@ -13,6 +13,8 @@ class AlfaBankService
     protected $login;
     protected $password;
     protected $returnUrl;
+    protected $failUrl;
+    protected $dynamicCallbackUrl;
     protected $currency;
 
     public function __construct()
