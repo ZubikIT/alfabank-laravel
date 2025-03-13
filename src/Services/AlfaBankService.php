@@ -22,13 +22,15 @@ class AlfaBankService
         $this->login = config('alfabank.login');
         $this->password = config('alfabank.password');
         $this->returnUrl = config('alfabank.return_url');
+        $this->failUrl = config('alfabank.fail_url');
+        $this->dynamicCallbackUrl = config('alfabank.dynamic_callback_url');
         $this->currency = config('alfabank.currency');
     }
 
     /**
      * Регистрация ссылки на банк [Создание платежа]
      */
-    public function createPayment($orderId, $amount)
+    public function createPayment($orderId, $amount, expirationDate, $jsonParams)
     {
         $response = $this->client->post('/payment/rest/register.do', [
             'form_params' => [
@@ -38,6 +40,11 @@ class AlfaBankService
                 'amount' => $amount * 100, // Конвертация в копейки
                 'currency' => $this->currency,
                 'returnUrl' => $this->returnUrl,
+                'email' => $email,
+                'failUrl' => $this->failUrl,
+                'dynamicCallbackUrl' => $this->dynamicCallbackUrl,
+                'expirationDate' => $expirationDate,
+                'jsonParams' => json_encode($jsonParams, true),
             ],
         ]);
 
