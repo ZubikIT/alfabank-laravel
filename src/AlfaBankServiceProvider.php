@@ -11,7 +11,7 @@ class AlfaBankServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/alfabank.php','alfabank');
+        $this->mergeConfigFrom(__DIR__.'/config/alfabank.php','alfabank');
 
         $this->app->singleton(AlfaBankService::class, function ($app) {
             return new AlfaBankService();
@@ -27,7 +27,7 @@ class AlfaBankServiceProvider extends ServiceProvider
             __DIR__.'/config/alfabank.php' => config_path('alfabank.php'),
         ], 'config');
 
-        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
 
         if ($this->app->runningInConsole()) {
             $this->commands([]);
