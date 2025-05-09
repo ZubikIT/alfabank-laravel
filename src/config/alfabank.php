@@ -7,6 +7,6 @@ return [
     'password' => env('ALFABANK_PASSWORD'),
     'return_url' => env('ALFABANK_RETURN_URL'),
     'fail_url' => env('ALFABANK_FAIL_URL'),
-    'dynamic_callback_url' => env('ALFABANKDYNAMICCALLBACKURL')
+    'dynamic_callback_url' => env('ALFABANKDYNAMICCALLBACKURL'),
     'currency' => env('ALFABANK_CURRENCY', 'RUB'),
 ];
