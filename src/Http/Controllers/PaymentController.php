@@ -1,10 +1,10 @@
 <?php
 
-namespace SniffRx\AlfaBank\Http\Controllers;
+namespace ZubikIT\AlfaBank\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use SniffRx\AlfaBank\Facades\AlfaBank;
+use ZubikIT\AlfaBank\Facades\AlfaBank;
 
 class PaymentController extends Controller
 {
