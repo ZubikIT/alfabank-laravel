@@ -1,6 +1,6 @@
 <?php
 
-namespace SniffRx\AlfaBank\Services;
+namespace ZubikIT\AlfaBank\Services;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\Facades\Log;
