@@ -1,12 +1,12 @@
 <?php
 
-namespace SniffRx\AlfaBank\Facades;
+namespace ZubikIT\AlfaBank\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 class AlfaBank extends Facade
 {
     protected static function getFacadeAccessor() {
-        return \SniffRx\AlfaBank\Services\AlfaBankService::class;
+        return \ZubikIT\AlfaBank\Services\AlfaBankService::class;
     }
 }
