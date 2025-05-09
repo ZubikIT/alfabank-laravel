@@ -1,6 +1,6 @@
 <?php
 
-namespace SniffRx\AlfaBank;
+namespace ZubikIT\AlfaBank;
 
 use Illuminate\Support\ServiceProvider;
 
