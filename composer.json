@@ -1,13 +1,13 @@
 {
-    "name": "sniffrx/alfabank",
+    "name": "zubikit/alfabank",
     "description": "Alfabank payment integration for Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "SniffRx",
-            "email": "sniffrxofficial@gmail.com",
-            "homepage": "https://t.me/serjikgr"
+            "name": "Zubik Aliaksandr",
+            "email": "a.zubik@artcloud.by",
+            "homepage": "https://artcloud.by"
         }
     ],
     "autoload": {
@@ -19,11 +19,11 @@
     "repositories": [
     {
         "type": "path",
-        "url": "./packages/sniffrx/alfabank"
+        "url": "./packages/zubikit/alfabank"
     }
     ],
     "require": {
-        "sniffrx/alfabank": "*",
+        "zubikit/alfabank": "*",
         "laravel/framework": "~5.0|~6.0|~7.0|~8.0|~9.0|~10.0|~11.0",
         "php":"^8.0",
         "guzzlehttp/guzzle": "^7.0"
@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SniffRx\\AlfaBank\\AlfaBankServiceProvider"
+                "ZubikIT\\AlfaBank\\AlfaBankServiceProvider"
             ]
         }
     }
